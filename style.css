@@ -1,0 +1,28 @@
+* {
+    font-family: 'Commissioner', sans-serif;
+    display: flex-box;
+    justify-content: center;
+}
+
+body {
+    background-image: linear-gradient(to right, blue, rgb(255, 174, 0));
+}
+
+h1 {
+    color: white;
+    display: flex;
+    padding: 1em;
+    font-size: 3em;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar div {
+    height: 45em;
+    width: 45em;
+    background-color: whitesmoke;
+}
