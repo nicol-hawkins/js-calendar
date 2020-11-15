@@ -15,14 +15,32 @@ h1 {
     font-size: 3em;
 }
 
-.calendar {
+.main-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.calendar div {
+.calendar {
     height: 45em;
     width: 45em;
     background-color: whitesmoke;
 }
+
+ul {list-style-type: none;}
+
+
+/* Month header */
+.month {
+    padding: 5em 0em;
+    width: 100%;
+    background: rgb(226, 202, 206);
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
