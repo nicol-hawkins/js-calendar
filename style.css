@@ -15,16 +15,19 @@ h1 {
     font-size: 3em;
 }
 
+/* Main Container Element */
 .main-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .calendar {
     height: 45em;
     width: 45em;
     background-color: whitesmoke;
+ 
 }
 
 ul {list-style-type: none;}
@@ -32,7 +35,7 @@ ul {list-style-type: none;}
 
 /* Month header */
 .month {
-    padding: 5em 0em;
+    padding: 3em 0em;
     width: 100%;
     background: rgb(124, 131, 202);
     text-align: center;
@@ -44,20 +47,68 @@ ul {list-style-type: none;}
     padding: 0;
 }
 
+.month ul li {
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
 .month-name {
     color: whitesmoke;
+}
+
+/* Previous button */
+.month .prev {
+    float: left;
+    padding-top: 1rem;
+    margin: .5rem;
+    cursor: pointer;
+    
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 1rem;
+    margin: .5rem;
+    cursor: pointer;
+
 }
 
 /* Weekdays (Mon-Sun) */
 .weekdays {
     margin: 0;
     padding: 10px 0;
-    background-color: #ddd;
+    background-color: rgb(187, 187, 187);
 }
 
 .weekdays li {
     display: inline-block;
     width: 13.6%;
-    color: #666;
+    color: rgb(255, 255, 255);
     text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    margin: 0;
+    background: #eee;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white;
 }
